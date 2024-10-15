@@ -1,4 +1,5 @@
-const apiUrl = "http://localhost:8080/api/v1";
+const apiUrl =
+  "https://app-9afc6e0e-91ae-4750-8774-0a5f66365117.cleverapps.io/api/v1";
 
 // Obtener los datos del almacenamiento
 const nombreUsuario = sessionStorage.getItem("nombreUsuario");
