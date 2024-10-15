@@ -35,7 +35,8 @@ document
         console.log("Usuario logueado:", data);
         sessionStorage.setItem("nombreUsuario", data.name);
         sessionStorage.setItem("token", data.token);
-        window.location.href = "/SENSOR/index.html"; // Redirigir a la página principal
+        window.location.href =
+          "https://antonyospino.github.io/frontEnd-Api-Springboot-esp32/SENSOR/index.html"; // Redirigir a la página principal
       })
       .catch((error) => {
         console.error("Error al iniciar sesión:", error);
