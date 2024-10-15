@@ -1,0 +1,122 @@
+/* Estilo base */
+* {
+    box-sizing: border-box;
+  }
+  h1{
+    color: #a92b12;
+  }
+  /* Establecer un ancho máximo para el formulario */
+  .container {
+    max-width: 400px; /* Puedes ajustar este valor según tus necesidades */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 16px;
+  }
+  
+  /* Ancho completo para campos de entrada */
+ /* Estilos para los inputs de email y contraseña */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 2px solid #ab2d12;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 99%, #f1f1f1 100%);
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(200, 90,  80);
+  outline: none;
+}
+
+  /* Estilos específicos para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    /* Reduzca el tamaño de fuente y el relleno para adaptarse a pantallas más pequeñas */
+    input[type="text"],
+    input[type="password"] {
+      font-size: 14px;
+      padding: 10px;
+      margin: 3px 0 15px 0;
+    }
+  
+    button {
+        background-color: #ab2d12;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+    /* Reduzca el tamaño del botón y el relleno para adaptarse a pantallas más pequeñas */
+    .cancelbtn {
+      font-size: 16px;
+      padding: 12px 16px;
+      margin: 6px 0;
+    }
+  }
+  
+  
+  /* Resto de los estilos (sin cambios) */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .cancelbtn {
+    background-color: #ab2d12;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+   
+  .signupbtn {
+    background-color: #ab2d12;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+
+  
+  .cancelbtn:hover {
+    opacity: 1;
+  }
+  
+  a {
+    color: dodgerblue;
+  }
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;}
+
+    #logoAVVsaray{
+
+        
+        padding: 16px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+      width: 100%;
+     opacity: 0.9;
+ 
+    }
+    .signupbtn:hover {
+      background-color: #ab2d12;
+  }

@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.sensor-section,
+.Registro-section,
+.led-section {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#btnSensorRegistros,
+#btnLedRegistros {
+  background-color: green;
+  color: white;
+}
+
+#btnSensorOff,
+#btnSensorOn {
+  background-color: red;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* css de solo las tablas que muestran los registros de sensor*/
+
+table {
+  width: 100%; /* Ajustar el ancho de la tabla */
+  border-collapse: collapse; /* Elimina el doble borde entre celdas */
+  border-spacing: 0; /* Asegúrate de que no haya separación entre bordes de celdas */
+  margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+}
+
+th,
+td {
+  padding: 10px 15px; /* Espaciado interno de las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+  border-bottom: 1px solid #ddd; /* Añade una línea de separación entre filas */
+}
+
+th {
+  background-color: #f2f2f2; /* Color de fondo para el encabezado */
+  font-weight: bold; /* Encabezado en negrita */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Color de fondo alternado para las filas */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Cambia el fondo al pasar el mouse */
+}
+
+/*css del div que refleja el estado del led en el esp32*/
+.led-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.led-status {
+  width: 100%; /* Ajusta el ancho según lo necesites */
+  height: 40px; /* Ajusta la altura según lo necesites */
+  background-color: grey; /* Color por defecto cuando está apagado */
+  color: white; /* Color del texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px; /* Esquinas redondeadas */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.led-on {
+  background-color: green; /* Color cuando está encendido */
+}
+
+.toggle-Button {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  color: white;
+}

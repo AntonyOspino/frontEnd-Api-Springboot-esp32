@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control - Sistema de Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Panel de Control</h1>
+    <table id="registrosTabla">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Fecha</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se llenarán los registros con la función mostrarRegistros -->
+      </tbody>
+    </table>
+
+    <div class="control-panel">
+      <div class="sensor-section">
+        <h2>Sensor & Led</h2>
+        <button id="btnSensorOn">Activar</button>
+        <button id="btnSensorOff">Desactivar</button>
+      </div>
+
+      <div class="Registro-section">
+        <h2>Registros</h2>
+        <button id="btnSensorRegistros">Sensor</button>
+        <button id="btnLedRegistros">Led</button>
+        </button>
+      </div>
+
+      <div class="led-section">
+        <h2>Led</h2>
+        <button id="toggleButton" class="toggle-Button">Encender/Apagar</button>
+        <div id="ledStatus" class="led-status">Apagado</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalMessage"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

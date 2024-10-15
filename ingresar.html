@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Api esp32</title>
+    <script src="https://kit.fontawesome.com/b5d3dd9035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ingresarstyle.css">
+</head>
+
+<body>
+
+    <form id="loginForm" style="border:1px solid #ccc">
+        <div class="container">
+            <img src="imagenes Saray/LOGO S.O.png" alt="Logo AVV Saray" id="logoAVVsaray">
+            <h1>Ingresar</h1>
+            <label for="email"><span class="fa fa-envelope"></span> Email</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+
+            <label for="psw"><span class="fa fa-lock"></span> Contraseña</label>
+            <input type="password" id="psw" name="psw" required placeholder="Ingrese su contraseña">
+
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                Recordarme </label>
+            <p>Al crear una cuenta aceptas nuestros <a href="#" style="color:dodgerblue">Términos y Privacidad</a>.</p>
+
+            <div class="clearfix">
+                <button type="submit" class="signupbtn">Ingresar</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="ingresar.js"></script>
+
+</body>
+
+</html>
