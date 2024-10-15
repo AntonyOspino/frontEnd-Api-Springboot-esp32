@@ -17,6 +17,7 @@ const btnSensorRegistros = document.getElementById("btnSensorRegistros");
 const btnLedRegistros = document.getElementById("btnLedRegistros");
 const ledStatusDiv = document.getElementById("ledStatus");
 const btnEnviarRegistroLed = document.getElementById("toggleButton");
+const btnCerrarSesion = document.getElementById("btnLogout");
 
 // Función para mostrar mensajes en el modal
 function showModal(message) {
@@ -299,6 +300,16 @@ btnEnviarRegistroLed.onclick = async function () {
   } else {
     console.error("No se pudo obtener el último registro del LED.");
   }
+};
+
+btnCerrarSesion.onclick = function () {
+  // Limpiar el token almacenado en sessionStorage
+  sessionStorage.removeItem("token");
+  sessionStorage.removeItem("nombreUsuario");
+  sessionStorage.clear();
+
+  window.location.href =
+    "https://antonyospino.github.io/frontEnd-Api-Springboot-esp32/";
 };
 
 // Configura un intervalo para comprobar el estado del LED cada 5 segundos (5000 ms)

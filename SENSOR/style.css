@@ -159,3 +159,9 @@ tr:hover {
   background-color: red;
   color: white;
 }
+
+.btnLogout {
+  background-color: red;
+  color: white;
+  margin-top: 20px;
+}
